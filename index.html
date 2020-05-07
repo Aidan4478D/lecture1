@@ -78,18 +78,10 @@
               width: 200px;
           }
 
-          .grid {
-              background-color: darkmagenta;
-              display: grid;
-              padding: 20px;
-              grid-column-gap: 20px;
-              grid-row-gap: 10px;
-              grid-template-columns: auto atuo auto;
-          }
-
-          .grid-item {
-            background-color: white;
-            font-size: 20px;
+          .row > div {
+            padding: 20px;
+            background-color: lightgrey;
+            border: 1px solid black;
           }
 
         </style>
@@ -160,15 +152,22 @@
               <div> C. Hola </div>
           </div>
 
-          <div class ="grid-item">
-              <div> A </div>
-              <div> B </div>
-              <div> C </div>
-              <div> D </div>
-              <div> E </div>
-              <div> F </div>
+          <div class = "container">
+              <div class = "row">
+                  <div class="col-3">
+                      This is a section.
+                  </div>
+                  <div class="col-3">
+                      This is a second section.
+                  </div>
+                  <div class="col-3">
+                      This is a third section.
+                  </div>
+                  <div class="col-3">
+                      This is a fourth section.
+                  </div>
+              </div>
           </div>
-
           <ol>
               <li> item one </li>
               <li> item two </li>
