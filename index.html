@@ -41,6 +41,12 @@
             background-color: lightgrey;
           }
 
+          @media print {
+              .screen-only {
+                  display: none;
+              }
+          }
+
         </style>
     </head>
     <body>
@@ -110,5 +116,9 @@
                   </ul>
               <li> item three </li>
           </ol>
+
+          <p> this is a sentance </p>
+          <p> this is another sentance </p>
+          <p class="screen-only"> This sentance will only appear on screens</p>
     </body>
 </html>
