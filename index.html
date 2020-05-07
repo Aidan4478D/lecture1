@@ -2,6 +2,7 @@
 <html>
     <head>
         <title> Test </title>
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
         <style>
 
           #change {
@@ -64,6 +65,17 @@
               }
           }
 
+          .container {
+              display: flex;
+              flex-wrap: wrap;
+          }
+          .container > div {
+              background-color: springgreen;
+              font-size: 20px;
+              margin: 20px;
+              padding: 20px;
+              width: 200px;
+          }
 
         </style>
     </head>
@@ -127,6 +139,12 @@
 
           <button> Submit Responses! </button>
 
+          <div class ="container">
+              <div> A. Hello </div>
+              <div> B. Bonjour </div>
+              <div> C. Hola </div>
+          </div>
+
           <ol>
               <li> item one </li>
               <li> item two </li>
@@ -140,5 +158,7 @@
           <p> this is a sentance </p>
           <p> this is another sentance </p>
           <p class="screen-only"> This sentance will only appear on screens</p>
+
+
     </body>
 </html>
