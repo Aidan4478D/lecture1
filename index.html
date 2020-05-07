@@ -70,11 +70,25 @@
               flex-wrap: wrap;
           }
           .container > div {
-              background-color: springgreen;
+              background-color: lime;
               font-size: 20px;
               margin: 20px;
               padding: 20px;
               width: 200px;
+          }
+
+          .grid {
+              background-color: Lavender;
+              display: grid;
+              padding: 20px;
+              grid-column-gap: 20px;
+              grid-row-gap: 10px;
+              grid-template-columns: 200px 200px;
+          }
+
+          .grid-item {
+            background-color: white;
+            font-size: 20px;
           }
 
         </style>
@@ -143,6 +157,15 @@
               <div> A. Hello </div>
               <div> B. Bonjour </div>
               <div> C. Hola </div>
+          </div>
+
+          <div class ="grid-item">
+              <div> A </div>
+              <div> B </div>
+              <div> C </div>
+              <div> D </div>
+              <div> E </div>
+              <div> F </div>
           </div>
 
           <ol>
